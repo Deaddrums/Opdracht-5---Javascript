@@ -163,3 +163,5 @@ Indien de invoer niet klopt, wordt de foutmelding weergegeven:
   kunt daarom
   ook [Template literals](https://www.digitalocean.com/community/tutorials/understanding-template-literals-in-javascript#expression-interpolation)
   gebruiken!
+#   O p d r a c h t - 5 - - - J a v a s c r i p t  
+ 
