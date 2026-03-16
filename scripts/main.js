@@ -71,4 +71,103 @@ const departments = {
     }
 }
 
-console.log(departments);
+// Opdracht 1
+// 1.a
+console.log('De afdeling Sales heeft ' + departments.sales.numberOfEmployees + ' medewerkers')
+
+//1.b
+console.log('marketing is een leuke afdeling om te werken' + departments.marketing.description)
+
+//1.c
+console.log('De afdeling Customer Service heeft ' + departments["customer-service"].numberOfEmployees + ' medewerkers')
+
+//1.d
+console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager.' + departments.sales.jobs[1].description)
+
+//Opdracht 2
+//2.a
+const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+console.log(userInput);
+
+//2.b
+if (userInput === "marketing"){
+    console.log('Je koos marketing. ' + departments.marketing.description)
+}
+if (userInput === "sales"){
+    console.log('Je koos sales. ' + departments.sales.description)
+}
+if (userInput === "customer-service") {
+    console.log('Je koos customer service. ' + departments["customer-service"].description)
+}
+
+//2.c
+else {
+    console.error('Ongeldige keuze, dombo')
+}
+
+// Opdracht 4
+//4.a
+console.log( userInput + ' is een leuke afdeling om te werken. Er werken op dit moment ' + departments[userInput].numberOfEmployees + ' medewerkers')
+
+//4.b
+const userChoice = prompt(
+    'Je koos ' + userInput + ' Over welke functie wil je meer weten? Voer een getal in tussen 0 en 3\n' +
+'0: ' + departments[userInput].jobs[0].title+ '\n' +
+'1: ' + departments[userInput].jobs[1].title+ '\n' +
+'2: ' + departments[userInput].jobs[2].title+ '\n' +
+'3: ' + departments[userInput].jobs[3].title);
+
+//4.c
+if (userChoice === "0") {
+    console.log(
+        'Je koos ' + departments[userInput].jobs[0].title + '. Een uitdagende rol! ' + departments[userInput].jobs[0].description
+    )
+}
+else if (userChoice === "1") {
+    console.log(
+        'Je koos ' + departments[userInput].jobs[1].title + '. Een uitdagende rol! ' + departments[userInput].jobs[1].description
+    )
+}
+else if (userChoice === "2") {
+    console.log(
+        'Je koos ' + departments[userInput].jobs[2].title + '. Een uitdagende rol! ' + departments[userInput].jobs[2].description
+    )
+}
+else if (userChoice === "3") {
+    console.log(
+        'Je koos ' + departments[userInput].jobs[3].title + '. Een uitdagende rol! ' + departments[userInput].jobs[3].description
+    )
+}
+else console.error('Ja, de mazzel gabber ...')
+
+
+// // Opdracht 3
+// //3.a
+// let UserChoice;
+
+// const userChoice = prompt('Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
+//         '0: ' + departments.marketing.jobs[0].title+'\n' +
+//         '1: ' + departments.marketing.jobs[1].title+'\n' +
+//         '2: ' + departments.marketing.jobs[2].title+'\n' +
+//         '3: ' + departments.marketing.jobs[3].title
+// )
+//
+// //3.b
+//     if (userChoice === "0") {
+//         console.log('Je koos ' + departments.marketing.jobs[0].title + '. Een uitdagende rol!' + departments.marketing.jobs[0].description)
+//     }
+//     else if(userChoice === "1") {
+//         console.log('Je koos ' + departments.marketing.jobs[1].title + '. Een uitdagende rol!' + departments.marketing.jobs[1].description)
+//     }
+//     else if(userChoice === "2") {
+//         console.log('Je koos ' + departments.marketing.jobs[2].title + '. Een uitdagende rol!' + departments.marketing.jobs[2].description)
+//     }
+//     else if(userChoice=== "3") {
+//         console.log('Je koos ' + departments.marketing.jobs[3].title + '. Een uitdagende rol!' + departments.marketing.jobs[3].description)
+//     }
+//     //3.c
+//     else {
+//         console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen')
+//     }
+
+// super geheime code die niemand mag weten want iemand loopt te kloten met github
